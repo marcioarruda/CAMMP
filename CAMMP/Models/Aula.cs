@@ -12,7 +12,7 @@ namespace CAMMP.Models
         public DiaSemana DiaDaSemana { get; set; }
 
         [Display(Name = "Horário")]
-        public DateTime Horario { get; set; }
+        public string Horario { get; set; }
 
         [Display(Name = "Duração (Minutos)")]
         public int Duracao { get; set; }
@@ -21,7 +21,7 @@ namespace CAMMP.Models
         {
         }
 
-        public Aula(DiaSemana diaDaSemana, DateTime horario, int duracao)
+        public Aula(DiaSemana diaDaSemana, string horario, int duracao)
         {
             DiaDaSemana = diaDaSemana;
             Horario = horario;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace CAMMP.Models
 {
@@ -7,12 +8,25 @@ namespace CAMMP.Models
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Cpf { get; set; }
+
+        [Display(Name = "Nascimento")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DtNascimento { get; set; }
+
+        [Display(Name = "Matrícula")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DtMatricula { get; set; }
         public string Sexo { get; set; }
+
+        [Display(Name = "Endereço")]
         public string Endereco { get; set; }
         public string Bairro { get; set; }
         public string Telefone { get; set; }
+
+        [Display(Name = "E-mail")]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
         public Aluno()

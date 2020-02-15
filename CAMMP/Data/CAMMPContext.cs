@@ -15,5 +15,13 @@ namespace CAMMP.Data
         }
 
         public DbSet<CAMMP.Models.Aluno> Aluno { get; set; }
+
+        public DbSet<CAMMP.Models.Professor> Professor { get; set; }
+
+        public DbSet<CAMMP.Models.Curso> Curso { get; set; }
+
+        public DbSet<CAMMP.Models.Aula> Aula { get; set; }
+
+        public DbSet<CAMMP.Models.Turma> Turma { get; set; }
     }
 }

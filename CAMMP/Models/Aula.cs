@@ -5,6 +5,7 @@ namespace CAMMP.Models
 {
     public class Aula
     {
+        public int Id { get; set; }
         public DiaSemana DiaDaSemana { get; set; }
         public DateTime Horario { get; set; }
         public int Duracao { get; set; }

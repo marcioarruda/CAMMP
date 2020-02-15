@@ -3,14 +3,16 @@ using System;
 using CAMMP.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CAMMP.Migrations
 {
     [DbContext(typeof(CAMMPContext))]
-    partial class CAMMPContextModelSnapshot : ModelSnapshot
+    [Migration("20200215030551_OutrasClasses")]
+    partial class OutrasClasses
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

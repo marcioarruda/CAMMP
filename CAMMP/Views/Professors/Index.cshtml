@@ -1,7 +1,7 @@
-﻿@model IEnumerable<CAMMP.Models.Aluno>
+﻿@model IEnumerable<CAMMP.Models.Professor>
 
 @{
-    ViewData["Title"] = "Aluno";
+    ViewData["Title"] = "Professor";
 }
 
 <h2>@ViewData["Title"]</h2>
@@ -22,7 +22,7 @@
                 @Html.DisplayNameFor(model => model.DtNascimento)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DtMatricula)
+                @Html.DisplayNameFor(model => model.ValorHora)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Sexo)
@@ -55,7 +55,7 @@
                 @Html.DisplayFor(modelItem => item.DtNascimento)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DtMatricula)
+                @Html.DisplayFor(modelItem => item.ValorHora)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Sexo)

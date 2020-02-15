@@ -14,7 +14,7 @@ namespace CAMMP.Models
         [Display(Name = "Horário")]
         public DateTime Horario { get; set; }
 
-        [Display(Name = "Duração")]
+        [Display(Name = "Duração (Minutos)")]
         public int Duracao { get; set; }
 
         public Aula()

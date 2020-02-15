@@ -8,6 +8,7 @@ namespace CAMMP.Models
         public string Nome { get; set; }
 
         [Display(Name = "Preço")]
+        [DisplayFormat(DataFormatString = "{0:F2}")]
         public double Preco { get; set; }
 
         public Curso()
